@@ -1,4 +1,4 @@
-- title: About Me
-  url: /about.html
 - title: Projects
-  url: /projects.html
+  url: /
+- title: About Me
+  url: /aboutme
