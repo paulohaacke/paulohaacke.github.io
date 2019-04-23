@@ -1,0 +1,34 @@
+---
+---
+
+@import 'bootstrap/bootstrap';
+
+$enable-shadows: true;
+
+.project-preview {
+	&-block {
+		background-size: 100% 100%;
+		height: 200px;
+		opacity: 0.6;
+		@include transition(box-shadow .15s, transform .15s, opacity .15s);
+		&:hover {
+			@extend .shadow;
+			opacity: 1;
+			text-decoration-line: none;
+			transform:translateY(-0.25rem);
+		}
+		&:active {
+			@extend .active;
+			transform:none;
+		}
+	}
+	&-title {
+		font-size: 1.2rem;
+		font-weight: 700;
+		line-height: 1;
+	}
+	&-description {
+		font-size: .8rem;
+		color: rgba(33,37,41,.7);
+	}
+}
