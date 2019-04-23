@@ -1,0 +1,34 @@
+- title: Free Spot
+  description: Planning a solution in order to efficiently manage the occupancy in private parking spaces. 
+  github-repo: free-spot
+  progress: 100
+- title: OCR Page Chrome Extension 
+  github-repo: ocr-page-chrome-extension
+  progress: 80
+- title: CheckMate Life Mobile App
+  github-repo: checkmate-life-mobile-app
+  progress: 100
+- title: CheckMate Life Web App 
+  github-repo: checkmate-life-web-app
+  progress: 100
+- title: CheckMate Life Server
+  github-repo: checkmate-life-server
+  progress: 100
+- title: Con Fusion Server
+  github-repo: con-fusion-server
+  progress: 100
+- title: Con Fusion Mobile App
+  github-repo: con-fusion-mobile-app
+  progress: 100
+- title: Con Fusion Web App
+  github-repo: con-fusion-web-app
+  progress: 100
+- title: Node Examples
+  github-repo: node-examples
+  progress: 100
+- title: Vigenere Crack
+  github-repo: VigenereCrack
+  progress: 100
+- title: One Time Pad Crack
+  github-repo: OneTimePadCrack
+  progress: 100

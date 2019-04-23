@@ -1,0 +1,40 @@
+<div class="container">
+	<div class="row">
+		{% for project in site.data.projects %}
+		{% assign title = project.title %}
+		{% if project.github-repo %}
+		{% assign github-repo = site.github.public_repositories | where_exp: "item", "item.name == project.github-repo" %}
+		{% assign description = github-repo[0].description %}
+		{% assign url = github-repo[0].html_url %}
+		{% assign language = github-repo[0].language %}
+		{% endif %}
+		{% if project.description %}
+		{% assign description = project.description %}
+		{% endif %}
+		{% if project.url %}
+		{% assign url = project.url %}
+		{% endif %}
+		{% if project.progress %}
+		{% assign progress = project.progress %}
+		{% endif %}
+		<div class="col-sm-4 p-3 project-preview">
+			<a class="shadow-sm p-3 mb-3 rounded bg-dark d-flex flex-column project-preview-block" style="background-image: url('/assets/img/project-bkg.jpg')" href="{{url}}" target="_blank" >
+				{% if language %}
+				<h1><span class="badge badge-light">{{language}}</span></h1>
+				{% endif %}
+
+				{% if project.progress %}
+				<div class="progress mt-auto">
+					<div class="progress-bar bg-success" role="progressbar" style="width: {{progress}}%;" aria-valuenow="{{progress}}" aria-valuemin="0" aria-valuemax="100">Progress: {{progress}}%</div>
+				</div>
+				{% endif %}
+			</a>
+			<div class="project-preview-title">{{title}}</div>
+			<div class="project-preview-description">{{description}}</div>
+		</div>
+
+		{% endfor %}
+	</div>
+
+</div>
+
